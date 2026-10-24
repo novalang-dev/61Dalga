@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hakkımızda | 61Dalga</title>
+
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+  
+  <style>
+    :root {
+      --bordo: #800020;
+      --bordo-koyu: #5a0017;
+      --mavi: #0080FF;
+      --arka-plan: #f4f6f9;
+      --yazi-ana: #222222;
+      --yazi-gri: #666666;
+      --kenarlik: #e0e0e0;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+    body { background-color: var(--arka-plan); color: var(--yazi-ana); display: flex; flex-direction: column; min-height: 100vh; }
+
+    header { background-color: #ffffff; border-bottom: 3px solid var(--bordo); position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+    .header-container { max-width: 900px; margin: 0 auto; padding: 0 15px; display: flex; justify-content: space-between; align-items: center; height: 65px; }
+    .logo img { height: 100px; width: auto; display: block; }
+
+    nav ul { display: flex; list-style: none; gap: 8px; }
+    nav ul li a { display: block; padding: 8px 14px; color: var(--yazi-ana); text-decoration: none; font-weight: 600; font-size: 0.9rem; border-radius: 6px; transition: all 0.2s; }
+    nav ul li a:hover, nav ul li a.active { color: var(--bordo); background-color: #f0f4f8; }
+
+    .container { max-width: 700px; margin: 25px auto; padding: 0 15px; flex: 1; }
+
+    .info-card { background: white; padding: 30px; border-radius: 10px; border: 1px solid var(--kenarlik); box-shadow: 0 2px 8px rgba(0,0,0,0.04); line-height: 1.7; }
+    .info-card h1 { color: var(--bordo); margin-bottom: 18px; font-size: 1.6rem; border-bottom: 2px solid #f0f0f0; padding-bottom: 10px; }
+    .info-card p { margin-bottom: 15px; color: #444; font-size: 1rem; }
+
+    footer { background-color: #ffffff; border-top: 1px solid var(--kenarlik); text-align: center; padding: 20px; font-size: 0.85rem; color: var(--yazi-gri); margin-top: auto; }
+    footer span { color: var(--bordo); font-weight: bold; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <a href="index.html" class="logo">
+        <img src="logo.png" alt="61Dalga Logo">
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Ana Sayfa</a></li>
+          <li><a href="sondakika.html">Son Dakika</a></li>
+          <li><a href="hakkimizda.html" class="active">Hakkımızda</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="info-card">
+      <h1>Hakkımızda</h1>
+      <p><strong>61Dalga</strong>, ne bir medya holdinginin ne de sponsor gruplarının projesidir. Bu platform, yağmurda çamurda Avni Aker’den Papara Park’a Bordo-Mavi sevdanın peşinden koşan <strong>taraftarın kendi öz sesidir.</strong></p>
+      
+      <p>Fırtınanın koptuğu her yerde Trabzonspor’un hakkını savunmak, yerel ve ulusal basındaki tüm gelişmeleri saniyesi saniyesine ve sansürsüzce tek bir noktada toplamak için yola çıktık.</p>
+      
+      <p>Amacımız; prim yapmaya çalışan manşetlerden uzak, sadece Trabzonspor’un menfaatlerini gözeterek, Bordo-Mavi sevdalılarına en hızlı ve en doğru haber akışını sunmaktır.</p>
+      
+      <p><em>"Bizimki sadece bir takım tutmak değil; bir şehir, bir duruş, bitmeyen bir sevdadır."</em></p>
+      
+      <!-- LOGOLU İMZA ALANI -->
+      <div style="display: flex; align-items: center; justify-content: flex-end; gap: 10px; margin-top: 20px;">
+        <img src="favicon.ico" alt="61Dalga Amblem" style="width: 35px; height: 35px; border-radius: 50%;">
+        <span style="font-weight: bold; color: var(--bordo); font-size: 1rem;">61Dalga Ekibi</span>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2026 <span>61DALGA</span> - Tüm Hakkı Bordo-Mavi Sevdalılarına Aittir.
+  </footer>
+
+</body>
+</html>
